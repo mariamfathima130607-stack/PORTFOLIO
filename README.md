@@ -1,38 +1,56 @@
-# Mariam Fathima - Personal Developer Portfolio 🚀
+# Mariam Fathima | Personal Portfolio
 
-A sleek, modern dark-mode personal portfolio website built with semantic HTML5, CSS3 glassmorphism design, and vanilla JavaScript.
-
-Live Demo / Hosted Site: [mariamfathima130607-stack.github.io/portfolio](https://mariamfathima130607-stack.github.io/portfolio)
-
----
-
-## ✨ Features
-
-- **Modern Aesthetic**: Dark mode theme with glowing indigo/purple gradients and glassmorphism headers.
-- **Dynamic Typewriter Header**: Interactive roles typewriter effect on the hero section.
-- **Featured Projects**: Highlights repositories like [`python_assignment`](https://github.com/mariamfathima130607-stack/python_assignment).
-- **Responsive Layout**: Mobile-friendly navigation drawer and adaptive grid layout.
-- **Interactive Contact Section**: Contact form with instant status messaging.
+> **Student & Software Developer**  
+> Live Website: [https://mariamfathima130607-stack.github.io/PORTFOLIO](https://mariamfathima130607-stack.github.io/PORTFOLIO)  
+> GitHub Profile: [github.com/mariamfathima130607-stack](https://github.com/mariamfathima130607-stack)
 
 ---
 
-## 🛠️ Tech Stack
+## 👤 About Me
 
-- **Structure**: HTML5 Semantic markup
-- **Styling**: CSS3 (Vanilla CSS variables, Flexbox/Grid, Glassmorphism, Responsive design)
-- **Typography**: Google Fonts (*Outfit*, *Inter*)
-- **Icons**: FontAwesome 6
+Student & Software Developer passionate about algorithms, database systems, and modern web applications. Focused on writing clean code, understanding foundational software principles, and continuous learning.
+
+- **Software Engineering**: Foundational software principles, structured logic, and object-oriented design.
+- **Database Systems**: Relational database structures, SQL query optimization, and structured data storage.
+- **Web Development**: Responsive web application layouts, front-end user interfaces, and modern web styling.
 
 ---
 
-## 🌐 Deploying to GitHub Pages
+## 🛠️ Technical Skills
 
-To activate live hosting on GitHub Pages:
+### 💻 Programming Languages
+- **C**: Structured Programming & Problem Solving
+- **C++**: Object-Oriented Programming & STL
+- **Java**: Object-Oriented Programming & Application Logic
+- **Python**: Data Structures, Algorithms & Scripting
+- **JavaScript**: Interactive Web Development & DOM
+- **TypeScript**: Type-Safe Modern Web Development
 
-1. Go to your GitHub repository: [`mariamfathima130607-stack/portfolio`](https://github.com/mariamfathima130607-stack/portfolio)
-2. Click **Settings** (top navigation tab).
-3. On the left sidebar, click **Pages**.
-4. Under **Build and deployment** -> **Source**, select **Deploy from a branch**.
-5. Under **Branch**, select `main` branch and `/ (root)` folder, then click **Save**.
-6. Within 1-2 minutes, your website will be live at:
-   `https://mariamfathima130607-stack.github.io/portfolio`
+### 🌐 Web Technologies
+- **HTML**: Semantic Web Structure
+- **CSS**: Responsive UI & Modern Styling
+
+### 🗄️ Database
+- **MySQL**: Relational Database Management
+- **SQL**: Database Queries & Data Manipulation
+
+---
+
+## 🚀 Projects & Repositories
+
+### 🧪 [masha-bio-lab](https://github.com/mariamfathima130607-stack/masha-bio-lab)
+Laboratory system & computational project repository built with TypeScript.
+
+### 🐍 [python_assignment](https://github.com/mariamfathima130607-stack/python_assignment)
+A comprehensive suite of 30+ Python scripts covering mathematical algorithms, string processing, prime checks, list manipulation, and data structures.
+
+### 🌐 [PORTFOLIO](https://github.com/mariamfathima130607-stack/PORTFOLIO)
+Personal developer portfolio web application built with HTML5, CSS3 glassmorphism styling, and JavaScript, deployed live on GitHub Pages.
+
+---
+
+## 📬 Contact & Links
+
+- **GitHub Profile**: [github.com/mariamfathima130607-stack](https://github.com/mariamfathima130607-stack)
+- **GitHub Repositories**: [mariamfathima130607-stack/repos](https://github.com/mariamfathima130607-stack?tab=repositories)
+- **Location**: India
