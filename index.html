@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariam Fathima | Personal Portfolio</title>
+    <meta name="description" content="Personal Portfolio of Mariam Fathima - Student & Aspiring Software Developer specializing in Python, Web Development, and Problem Solving.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-accent">&lt;</span>Mariam<span class="logo-accent">/&gt;</span>
+            </a>
+            <nav class="nav-links" id="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link btn-contact">Contact Me</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="badge-dot"></span> Open to Opportunities & Collaborations
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="text-gradient">Mariam Fathima</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    I am a <span class="typewriter" id="typewriter"></span><span class="cursor">&nbsp;</span>
+                </h2>
+                <p class="hero-description">
+                    Passionate student and developer building clean code solutions, exploring Python algorithms, web applications, and constantly mastering new software engineering concepts.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        View Projects <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Get In Touch
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/mariamfathima130607-stack" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="mailto:mariamfathima130607@gmail.com" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-card">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="code-title">developer.py</span>
+                    </div>
+                    <pre class="code-body"><code><span class="keyword">class</span> <span class="class-name">Developer</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(self):
+        self.name = <span class="string">"Mariam Fathima"</span>
+        self.role = <span class="string">"Student & Aspiring Developer"</span>
+        self.skills = [<span class="string">"Python"</span>, <span class="string">"Algorithms"</span>, <span class="string">"Git"</span>, <span class="string">"Web"</span>]
+
+    <span class="keyword">def</span> <span class="function">build_future</span>(self):
+        <span class="keyword">while</span> True:
+            self.learn()
+            self.code()
+            self.create()
+
+<span class="comment"># Output: Ready to impact the tech world!</span></code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+                <p class="section-subtitle">Get to know my journey, passion, and aspirations</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>Continuous Learner</h3>
+                    <p>Dedicated to learning computer science principles, core algorithms, and modern development frameworks step-by-step.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Problem Solver</h3>
+                    <p>Enthusiastic about solving logic puzzles, mathematical challenges, and writing clean, efficient Python code.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><i class="fa-solid fa-rocket"></i></div>
+                    <h3>Future-Focused</h3>
+                    <p>Driven to build meaningful software projects, collaborate on open-source repositories, and grow into a full-stack engineer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & <span class="text-gradient">Technologies</span></h2>
+                <p class="section-subtitle">Tools and technologies I work with</p>
+            </div>
+            <div class="skills-wrapper">
+                <div class="skill-category">
+                    <h3><i class="fa-brands fa-python"></i> Programming & Logic</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-python"></i> Python 3</span>
+                        <span class="skill-tag"><i class="fa-solid fa-calculator"></i> Data Structures & Algorithms</span>
+                        <span class="skill-tag"><i class="fa-solid fa-gears"></i> Logic Building</span>
+                        <span class="skill-tag"><i class="fa-solid fa-terminal"></i> Command Line</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-code"></i> Web Development</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+                        <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                        <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fa-solid fa-mobile-screen"></i> Responsive Web Design</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Version Control</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
+                        <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
+                        <span class="skill-tag"><i class="fa-solid fa-code"></i> VS Code / Antigravity IDE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+                <p class="section-subtitle">Recent code repositories and practical work</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-banner">
+                        <i class="fa-brands fa-python project-icon"></i>
+                        <span class="project-badge">30+ Scripts</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Python Assignment Suite</h3>
+                        <p>A comprehensive collection of 30+ Python scripts covering algorithms, numerical analysis, string manipulation, data structures, and mathematical puzzles.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Algorithms</span>
+                            <span>Git</span>
+                            <span>Documentation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/mariamfathima130607-stack/python_assignment" target="_blank" class="btn btn-sm btn-primary">
+                                <i class="fa-brands fa-github"></i> View Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-banner project-banner-alt">
+                        <i class="fa-solid fa-laptop-code project-icon"></i>
+                        <span class="project-badge">Live Web App</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal Developer Portfolio</h3>
+                        <p>A responsive, high-performance developer portfolio built with modern semantic HTML5, glassmorphic CSS3 styling, dynamic JS typewriter effects, and dark mode aesthetics.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>GitHub Pages</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/mariamfathima130607-stack/portfolio" target="_blank" class="btn btn-sm btn-primary">
+                                <i class="fa-brands fa-github"></i> View Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+                <p class="section-subtitle">Have a question or want to collaborate? Feel free to reach out!</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:mariamfathima130607@gmail.com">mariamfathima130607@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/mariamfathima130607-stack" target="_blank">github.com/mariamfathima130607-stack</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>India</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Send Message <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <div class="form-status" id="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Mariam Fathima. Crafted with passion & code.</p>
+            <div class="footer-links">
+                <a href="#hero">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
