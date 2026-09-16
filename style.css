@@ -434,43 +434,6 @@ h1, h2, h3, h4 {
     font-size: 0.95rem;
 }
 
-/* Skills Badge Grid (Clean, Side-by-Side without descriptions) */
-.skills-flex-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-}
-
-.skill-badge-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: 16px;
-    padding: 1.4rem 1.8rem;
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-    transition: var(--transition);
-}
-
-.skill-badge-card:hover {
-    transform: translateY(-4px);
-    border-color: var(--primary);
-    background: var(--bg-card-hover);
-    box-shadow: 0 10px 25px var(--primary-glow);
-}
-
-.skill-badge-icon {
-    font-size: 2rem;
-    color: var(--accent);
-}
-
-.skill-badge-card span {
-    font-family: var(--font-heading);
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--text-main);
-}
-
 /* Projects Section */
 .projects-grid {
     display: grid;
@@ -717,9 +680,6 @@ h1, h2, h3, h4 {
     .about-grid, .projects-grid, .three-col-grid {
         grid-template-columns: 1fr;
     }
-    .skills-flex-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
     .github-banner-card {
         flex-direction: column;
         text-align: center;
@@ -729,12 +689,6 @@ h1, h2, h3, h4 {
     }
     .hero-title {
         font-size: 2.5rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .skills-flex-container {
-        grid-template-columns: 1fr;
     }
 }
 
