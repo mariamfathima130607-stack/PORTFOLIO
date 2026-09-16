@@ -1,7 +1,6 @@
 # Mariam Fathima | Personal Portfolio
 
-> **Student & Software Developer**  
-> Live Website: [https://mariamfathima130607-stack.github.io/PORTFOLIO](https://mariamfathima130607-stack.github.io/PORTFOLIO)  
+> **Student & Software Developer**   
 > GitHub Profile: [github.com/mariamfathima130607-stack](https://github.com/mariamfathima130607-stack)
 
 ---
