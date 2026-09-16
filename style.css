@@ -434,53 +434,41 @@ h1, h2, h3, h4 {
     font-size: 0.95rem;
 }
 
-/* Core Skills Grid */
-.core-skills-grid {
+/* Skills Badge Grid (Clean, Side-by-Side without descriptions) */
+.skills-flex-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
 }
 
-.core-skill-card {
+.skill-badge-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: 16px;
-    padding: 2rem 1.5rem;
-    text-align: center;
+    padding: 1.4rem 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
     transition: var(--transition);
 }
 
-.core-skill-card:hover {
-    transform: translateY(-8px);
+.skill-badge-card:hover {
+    transform: translateY(-4px);
     border-color: var(--primary);
     background: var(--bg-card-hover);
-    box-shadow: 0 12px 30px var(--primary-glow);
+    box-shadow: 0 10px 25px var(--primary-glow);
 }
 
-.core-skill-icon {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 1.2rem;
-    border-radius: 14px;
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.15) 100%);
-    border: 1px solid rgba(99, 102, 241, 0.3);
+.skill-badge-icon {
+    font-size: 2rem;
     color: var(--accent);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.8rem;
 }
 
-.core-skill-card h3 {
+.skill-badge-card span {
+    font-family: var(--font-heading);
     font-size: 1.25rem;
-    margin-bottom: 0.5rem;
+    font-weight: 600;
     color: var(--text-main);
-}
-
-.core-skill-card p {
-    color: var(--text-muted);
-    font-size: 0.85rem;
-    line-height: 1.5;
 }
 
 /* Projects Section */
@@ -520,15 +508,15 @@ h1, h2, h3, h4 {
 }
 
 .project-banner-bio {
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(56, 189, 248, 0.2) 100%);
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.2) 0%, rgba(168, 85, 247, 0.2) 100%);
 }
 
 .project-banner-bio .project-icon {
-    color: #10b981;
+    color: #38bdf8;
 }
 
 .project-banner-alt {
-    background: linear-gradient(135deg, rgba(56, 189, 248, 0.2) 0%, rgba(99, 102, 241, 0.2) 100%);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(99, 102, 241, 0.2) 100%);
 }
 
 .project-icon {
@@ -729,7 +717,7 @@ h1, h2, h3, h4 {
     .about-grid, .projects-grid, .three-col-grid {
         grid-template-columns: 1fr;
     }
-    .core-skills-grid {
+    .skills-flex-container {
         grid-template-columns: repeat(2, 1fr);
     }
     .github-banner-card {
@@ -745,7 +733,7 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 576px) {
-    .core-skills-grid {
+    .skills-flex-container {
         grid-template-columns: 1fr;
     }
 }
@@ -753,7 +741,7 @@ h1, h2, h3, h4 {
 @media (max-width: 768px) {
     .nav-links {
         display: none;
-        position.absolute;
+        position: absolute;
         top: 80px;
         left: 0;
         width: 100%;
