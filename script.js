@@ -72,73 +72,14 @@ if (hamburger && navLinks) {
     });
 }
 
-// Contact Form Handler (FormSubmit.co Integration)
+// Contact Form Handler (Direct FormSubmit.co Integration)
 const contactForm = document.getElementById("contact-form");
 const formStatus = document.getElementById("form-status");
 
 if (contactForm && formStatus) {
-    contactForm.addEventListener("submit", async (e) => {
-        e.preventDefault();
-        
-        const nameInput = document.getElementById("name");
-        const emailInput = document.getElementById("email");
-        const messageInput = document.getElementById("message");
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-
-        const name = nameInput ? nameInput.value.trim() : "";
-        const email = emailInput ? emailInput.value.trim() : "";
-        const message = messageInput ? messageInput.value.trim() : "";
-
-        if (!name || !email || !message) {
-            formStatus.style.color = "#ef4444";
-            formStatus.textContent = "Please fill in all required fields.";
-            return;
-        }
-
-        // Show sending status
+    contactForm.addEventListener("submit", () => {
         formStatus.style.color = "#3b82f6";
-        formStatus.textContent = "Sending your message...";
-        if (submitBtn) submitBtn.disabled = true;
-
-        try {
-            const response = await fetch("https://formsubmit.co/ajax/mariamfathima130607@gmail.com", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Accept": "application/json"
-                },
-                body: JSON.stringify({
-                    name: name,
-                    email: email,
-                    message: message,
-                    _subject: `New Portfolio Message from ${name}`,
-                    _template: "table"
-                })
-            });
-
-            const result = await response.json();
-
-            if (response.ok && (result.success === "true" || result.success === true)) {
-                formStatus.style.color = "#10b981";
-                formStatus.textContent = "Thank you! Your message has been sent successfully to Mariam's inbox.";
-                contactForm.reset();
-            } else {
-                throw new Error(result.message || "Failed to send message");
-            }
-        } catch (error) {
-            console.error("Form submission error:", error);
-            formStatus.style.color = "#ef4444";
-            formStatus.textContent = "Unable to send message automatically. Redirecting to direct mail submit...";
-            // Fallback: standard submit if AJAX fetch fails or is blocked
-            setTimeout(() => {
-                contactForm.submit();
-            }, 1500);
-        } finally {
-            if (submitBtn) submitBtn.disabled = false;
-            setTimeout(() => {
-                formStatus.textContent = "";
-            }, 7000);
-        }
+        formStatus.textContent = "Sending your message to Mariam's inbox...";
     });
 }
 
