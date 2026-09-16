@@ -434,7 +434,7 @@ h1, h2, h3, h4 {
     font-size: 0.95rem;
 }
 
-/* Core Skills Grid (8 Prominent Skill Cards) */
+/* Core Skills Grid */
 .core-skills-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -491,6 +491,10 @@ h1, h2, h3, h4 {
     margin-bottom: 3rem;
 }
 
+.three-col-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .project-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
@@ -513,6 +517,14 @@ h1, h2, h3, h4 {
     justify-content: center;
     position: relative;
     border-bottom: 1px solid var(--border-color);
+}
+
+.project-banner-bio {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(56, 189, 248, 0.2) 100%);
+}
+
+.project-banner-bio .project-icon {
+    color: #10b981;
 }
 
 .project-banner-alt {
@@ -714,7 +726,7 @@ h1, h2, h3, h4 {
     .hero-container, .contact-wrapper {
         grid-template-columns: 1fr;
     }
-    .about-grid, .projects-grid {
+    .about-grid, .projects-grid, .three-col-grid {
         grid-template-columns: 1fr;
     }
     .core-skills-grid {
@@ -741,7 +753,7 @@ h1, h2, h3, h4 {
 @media (max-width: 768px) {
     .nav-links {
         display: none;
-        position: absolute;
+        position.absolute;
         top: 80px;
         left: 0;
         width: 100%;
