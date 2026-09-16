@@ -1,5 +1,11 @@
 // Typewriter Effect
-const words = ["Student", "Aspiring Developer", "Python Enthusiast", "Problem Solver"];
+const words = [
+    "Python & Java Developer",
+    "SQL & Database Programmer",
+    "C & Software Engineer",
+    "Web Developer (HTML/CSS)",
+    "Logic & Algorithm Solver"
+];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -16,15 +22,15 @@ function typeEffect() {
         charIndex++;
     }
 
-    let typeSpeed = isDeleting ? 50 : 100;
+    let typeSpeed = isDeleting ? 40 : 90;
 
     if (!isDeleting && charIndex === currentWord.length) {
-        typeSpeed = 2000; // Pause at end of word
+        typeSpeed = 1800; // Pause at end of word
         isDeleting = true;
     } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
         wordIndex = (wordIndex + 1) % words.length;
-        typeSpeed = 500; // Pause before typing next word
+        typeSpeed = 400; // Pause before typing next word
     }
 
     setTimeout(typeEffect, typeSpeed);
@@ -93,7 +99,6 @@ window.addEventListener("scroll", () => {
 
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
         if (pageYOffset >= (sectionTop - 150)) {
             current = section.getAttribute("id");
         }

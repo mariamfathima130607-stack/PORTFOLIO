@@ -358,7 +358,7 @@ h1, h2, h3, h4 {
 .code-body {
     padding: 1.5rem;
     font-family: 'Consolas', 'Fira Code', monospace;
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     line-height: 1.7;
     overflow-x: auto;
 }
@@ -446,6 +446,15 @@ h1, h2, h3, h4 {
     border: 1px solid var(--border-color);
     padding: 2rem;
     border-radius: 16px;
+    transition: var(--transition);
+}
+
+.skill-category:hover {
+    border-color: var(--border-hover);
+}
+
+.full-width-category {
+    grid-column: span 3;
 }
 
 .skill-category h3 {
@@ -466,9 +475,9 @@ h1, h2, h3, h4 {
 .skill-tag {
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid var(--border-color);
-    padding: 0.6rem 1rem;
+    padding: 0.6rem 1.1rem;
     border-radius: 10px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--text-sub);
     display: flex;
     align-items: center;
@@ -476,11 +485,19 @@ h1, h2, h3, h4 {
     transition: var(--transition);
 }
 
+.skill-highlight {
+    background: rgba(99, 102, 241, 0.12);
+    border-color: rgba(99, 102, 241, 0.3);
+    color: #fff;
+    font-weight: 600;
+}
+
 .skill-tag:hover {
-    background: rgba(99, 102, 241, 0.15);
+    background: rgba(99, 102, 241, 0.25);
     border-color: var(--primary);
     color: #fff;
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--primary-glow);
 }
 
 /* Projects Section */
@@ -488,6 +505,7 @@ h1, h2, h3, h4 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    margin-bottom: 3rem;
 }
 
 .project-card {
@@ -566,6 +584,40 @@ h1, h2, h3, h4 {
     border-radius: 6px;
     font-size: 0.8rem;
     font-weight: 500;
+}
+
+/* GitHub Banner Card */
+.github-banner-card {
+    background: linear-gradient(135deg, rgba(19, 27, 46, 0.9) 0%, rgba(28, 40, 69, 0.9) 100%);
+    border: 1px solid var(--border-hover);
+    border-radius: 20px;
+    padding: 2.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.github-banner-content {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+}
+
+.github-banner-icon {
+    font-size: 3.5rem;
+    color: var(--accent);
+}
+
+.github-banner-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.github-banner-content p {
+    color: var(--text-muted);
+    font-size: 1rem;
 }
 
 /* Contact Section */
@@ -653,7 +705,6 @@ h1, h2, h3, h4 {
     margin-top: 1rem;
     text-align: center;
     font-weight: 500;
-
 }
 
 /* Footer */
@@ -682,6 +733,16 @@ h1, h2, h3, h4 {
     }
     .about-grid, .skills-wrapper, .projects-grid {
         grid-template-columns: 1fr;
+    }
+    .full-width-category {
+        grid-column: span 1;
+    }
+    .github-banner-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .github-banner-content {
+        flex-direction: column;
     }
     .hero-title {
         font-size: 2.5rem;

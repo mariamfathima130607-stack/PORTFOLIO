@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mariam Fathima | Personal Portfolio</title>
-    <meta name="description" content="Personal Portfolio of Mariam Fathima - Student & Aspiring Software Developer specializing in Python, Web Development, and Problem Solving.">
+    <meta name="description" content="Personal Portfolio of Mariam Fathima - Student & Aspiring Software Developer proficient in Python, Java, C, MySQL, HTML, CSS, FoxPro, QBasic, and Web Development.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
             <nav class="nav-links" id="nav-links">
                 <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#projects" class="nav-link">Projects & Repos</a>
                 <a href="#contact" class="nav-link btn-contact">Contact Me</a>
             </nav>
             <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -47,18 +47,18 @@
                     I am a <span class="typewriter" id="typewriter"></span><span class="cursor">&nbsp;</span>
                 </h2>
                 <p class="hero-description">
-                    Passionate student and developer building clean code solutions, exploring Python algorithms, web applications, and constantly mastering new software engineering concepts.
+                    Passionate student and developer proficient in Python, Java, C, MySQL, HTML, CSS, FoxPro, and QBasic. Dedicated to building software projects and solving complex logic problems.
                 </p>
                 <div class="hero-cta">
                     <a href="#projects" class="btn btn-primary">
-                        View Projects <i class="fa-solid fa-arrow-right"></i>
+                        View Repositories <i class="fa-solid fa-arrow-right"></i>
                     </a>
                     <a href="#contact" class="btn btn-outline">
                         Get In Touch
                     </a>
                 </div>
                 <div class="social-links">
-                    <a href="https://github.com/mariamfathima130607-stack" target="_blank" aria-label="GitHub">
+                    <a href="https://github.com/mariamfathima130607-stack" target="_blank" aria-label="GitHub Profile">
                         <i class="fa-brands fa-github"></i>
                     </a>
                     <a href="mailto:mariamfathima130607@gmail.com" aria-label="Email">
@@ -75,21 +75,22 @@
                         <span class="dot red"></span>
                         <span class="dot yellow"></span>
                         <span class="dot green"></span>
-                        <span class="code-title">developer.py</span>
+                        <span class="code-title">profile.py</span>
                     </div>
-                    <pre class="code-body"><code><span class="keyword">class</span> <span class="class-name">Developer</span>:
+                    <pre class="code-body"><code><span class="keyword">class</span> <span class="class-name">DeveloperProfile</span>:
     <span class="keyword">def</span> <span class="function">__init__</span>(self):
         self.name = <span class="string">"Mariam Fathima"</span>
-        self.role = <span class="string">"Student & Aspiring Developer"</span>
-        self.skills = [<span class="string">"Python"</span>, <span class="string">"Algorithms"</span>, <span class="string">"Git"</span>, <span class="string">"Web"</span>]
+        self.role = <span class="string">"Student & Software Developer"</span>
+        self.languages = [
+            <span class="string">"Python"</span>, <span class="string">"Java"</span>, <span class="string">"C"</span>, 
+            <span class="string">"MySQL"</span>, <span class="string">"HTML/CSS"</span>, 
+            <span class="string">"FoxPro"</span>, <span class="string">"QBasic"</span>
+        ]
 
-    <span class="keyword">def</span> <span class="function">build_future</span>(self):
-        <span class="keyword">while</span> True:
-            self.learn()
-            self.code()
-            self.create()
+    <span class="keyword">def</span> <span class="function">get_summary</span>(self):
+        <span class="keyword">return</span> <span class="string">"Eager to build innovative tech solutions!"</span>
 
-<span class="comment"># Output: Ready to impact the tech world!</span></code></pre>
+<span class="comment"># Status: Code committed & pushed to GitHub</span></code></pre>
                 </div>
             </div>
         </div>
@@ -100,23 +101,23 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
-                <p class="section-subtitle">Get to know my journey, passion, and aspirations</p>
+                <p class="section-subtitle">A versatile programmer with strong foundation in classic and modern programming languages</p>
             </div>
             <div class="about-grid">
                 <div class="about-card">
                     <div class="about-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <h3>Continuous Learner</h3>
-                    <p>Dedicated to learning computer science principles, core algorithms, and modern development frameworks step-by-step.</p>
+                    <h3>Multi-Language Foundations</h3>
+                    <p>Skilled across multiple paradigms — from procedural programming in C & QBasic to OOP in Java & Python, alongside database management with MySQL.</p>
                 </div>
                 <div class="about-card">
                     <div class="about-icon"><i class="fa-solid fa-code"></i></div>
-                    <h3>Problem Solver</h3>
-                    <p>Enthusiastic about solving logic puzzles, mathematical challenges, and writing clean, efficient Python code.</p>
+                    <h3>Problem Solving & Algorithmic Logic</h3>
+                    <p>Enthusiastic about algorithm optimization, string processing, numerical computation, and database query design.</p>
                 </div>
                 <div class="about-card">
                     <div class="about-icon"><i class="fa-solid fa-rocket"></i></div>
-                    <h3>Future-Focused</h3>
-                    <p>Driven to build meaningful software projects, collaborate on open-source repositories, and grow into a full-stack engineer.</p>
+                    <h3>Active GitHub Creator</h3>
+                    <p>Constantly publishing code repositories on GitHub, documenting assignments, and building responsive web applications.</p>
                 </div>
             </div>
         </div>
@@ -126,80 +127,97 @@
     <section class="skills section" id="skills">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Skills & <span class="text-gradient">Technologies</span></h2>
-                <p class="section-subtitle">Tools and technologies I work with</p>
+                <h2 class="section-title">Technical <span class="text-gradient">Skills</span></h2>
+                <p class="section-subtitle">Programming languages, databases, and development tools I work with</p>
             </div>
             <div class="skills-wrapper">
+                <!-- Programming Languages -->
                 <div class="skill-category">
-                    <h3><i class="fa-brands fa-python"></i> Programming & Logic</h3>
+                    <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
                     <div class="skills-tags">
-                        <span class="skill-tag"><i class="fa-brands fa-python"></i> Python 3</span>
-                        <span class="skill-tag"><i class="fa-solid fa-calculator"></i> Data Structures & Algorithms</span>
-                        <span class="skill-tag"><i class="fa-solid fa-gears"></i> Logic Building</span>
-                        <span class="skill-tag"><i class="fa-solid fa-terminal"></i> Command Line</span>
+                        <span class="skill-tag skill-highlight"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="skill-tag skill-highlight"><i class="fa-brands fa-java"></i> Java</span>
+                        <span class="skill-tag skill-highlight"><i class="fa-solid fa-c"></i> C</span>
+                        <span class="skill-tag skill-highlight"><i class="fa-solid fa-laptop-code"></i> QBasic</span>
+                        <span class="skill-tag skill-highlight"><i class="fa-solid fa-box-archive"></i> FoxPro</span>
                     </div>
                 </div>
+
+                <!-- Database & Querying -->
                 <div class="skill-category">
-                    <h3><i class="fa-solid fa-code"></i> Web Development</h3>
+                    <h3><i class="fa-solid fa-database"></i> Database & Management</h3>
                     <div class="skills-tags">
-                        <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
-                        <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                        <span class="skill-tag skill-highlight"><i class="fa-solid fa-database"></i> MySQL</span>
+                        <span class="skill-tag"><i class="fa-solid fa-table"></i> Relational Database Design</span>
+                        <span class="skill-tag"><i class="fa-solid fa-terminal"></i> SQL Queries</span>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-layer-group"></i> Web & Design</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag skill-highlight"><i class="fa-brands fa-html5"></i> HTML5</span>
+                        <span class="skill-tag skill-highlight"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
                         <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
-                        <span class="skill-tag"><i class="fa-solid fa-mobile-screen"></i> Responsive Web Design</span>
+                        <span class="skill-tag"><i class="fa-solid fa-mobile-screen"></i> Responsive UI Design</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Version Control</h3>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-category full-width-category">
+                    <h3><i class="fa-solid fa-screwdriver-wrench"></i> Developer Tools & Version Control</h3>
                     <div class="skills-tags">
                         <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
                         <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
                         <span class="skill-tag"><i class="fa-solid fa-code"></i> VS Code / Antigravity IDE</span>
+                        <span class="skill-tag"><i class="fa-solid fa-terminal"></i> Command Line Interface</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects & Repositories Section -->
     <section class="projects section" id="projects">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
-                <p class="section-subtitle">Recent code repositories and practical work</p>
+                <h2 class="section-title">GitHub Repositories & <span class="text-gradient">Projects</span></h2>
+                <p class="section-subtitle">Explore my open-source projects and code repositories on GitHub</p>
             </div>
             <div class="projects-grid">
-                <!-- Project 1 -->
+                <!-- Repository 1: Python Assignment -->
                 <div class="project-card">
                     <div class="project-banner">
                         <i class="fa-brands fa-python project-icon"></i>
-                        <span class="project-badge">30+ Scripts</span>
+                        <span class="project-badge">30+ Python Scripts</span>
                     </div>
                     <div class="project-content">
-                        <h3>Python Assignment Suite</h3>
-                        <p>A comprehensive collection of 30+ Python scripts covering algorithms, numerical analysis, string manipulation, data structures, and mathematical puzzles.</p>
+                        <h3>python_assignment</h3>
+                        <p>A structured repository containing 30+ Python programs covering mathematical algorithms, string processing, prime & composite checks, list calculations, and logic exercises.</p>
                         <div class="project-tags">
-                            <span>Python</span>
+                            <span>Python 3</span>
                             <span>Algorithms</span>
-                            <span>Git</span>
-                            <span>Documentation</span>
+                            <span>Math & Logic</span>
+                            <span>GitHub</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/mariamfathima130607-stack/python_assignment" target="_blank" class="btn btn-sm btn-primary">
-                                <i class="fa-brands fa-github"></i> View Repo
+                                <i class="fa-brands fa-github"></i> Open Repository
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
+                <!-- Repository 2: Developer Portfolio -->
                 <div class="project-card">
                     <div class="project-banner project-banner-alt">
-                        <i class="fa-solid fa-laptop-code project-icon"></i>
+                        <i class="fa-solid fa-globe project-icon"></i>
                         <span class="project-badge">Live Web App</span>
                     </div>
                     <div class="project-content">
-                        <h3>Personal Developer Portfolio</h3>
-                        <p>A responsive, high-performance developer portfolio built with modern semantic HTML5, glassmorphic CSS3 styling, dynamic JS typewriter effects, and dark mode aesthetics.</p>
+                        <h3>PORTFOLIO</h3>
+                        <p>Personal developer portfolio web application built with HTML5, CSS3, and JavaScript, hosted live on GitHub Pages with dark mode glassmorphism UI aesthetics.</p>
                         <div class="project-tags">
                             <span>HTML5</span>
                             <span>CSS3</span>
@@ -207,12 +225,26 @@
                             <span>GitHub Pages</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/mariamfathima130607-stack/portfolio" target="_blank" class="btn btn-sm btn-primary">
-                                <i class="fa-brands fa-github"></i> View Repo
+                            <a href="https://github.com/mariamfathima130607-stack/PORTFOLIO" target="_blank" class="btn btn-sm btn-primary">
+                                <i class="fa-brands fa-github"></i> Open Repository
                             </a>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- GitHub Repositories Banner -->
+            <div class="github-banner-card">
+                <div class="github-banner-content">
+                    <i class="fa-brands fa-github github-banner-icon"></i>
+                    <div>
+                        <h3>Explore All Repositories on GitHub</h3>
+                        <p>Check out my complete GitHub profile <strong>@mariamfathima130607-stack</strong> to view all my commits, repositories, and upcoming software projects.</p>
+                    </div>
+                </div>
+                <a href="https://github.com/mariamfathima130607-stack?tab=repositories" target="_blank" class="btn btn-primary">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit GitHub Profile
+                </a>
             </div>
         </div>
     </section>
@@ -236,15 +268,15 @@
                     <div class="contact-item">
                         <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
                         <div>
-                            <h4>GitHub</h4>
+                            <h4>GitHub Profile</h4>
                             <a href="https://github.com/mariamfathima130607-stack" target="_blank">github.com/mariamfathima130607-stack</a>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-icon"><i class="fa-solid fa-code-branch"></i></div>
                         <div>
-                            <h4>Location</h4>
-                            <p>India</p>
+                            <h4>GitHub Repositories</h4>
+                            <a href="https://github.com/mariamfathima130607-stack?tab=repositories" target="_blank">mariamfathima130607-stack/repos</a>
                         </div>
                     </div>
                 </div>
