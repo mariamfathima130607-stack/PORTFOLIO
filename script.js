@@ -1,7 +1,7 @@
 // Typewriter Effect
 const words = [
     "Python & Java Developer",
-    "SQL & Database Programmer",
+    "MySQL & Database Programmer",
     "C & Software Engineer",
     "Web Developer (HTML/CSS)",
     "Logic & Algorithm Solver"
