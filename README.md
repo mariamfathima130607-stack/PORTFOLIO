@@ -39,6 +39,9 @@ Student & Software Developer passionate about algorithms, database systems, and 
 
 ## 🚀 Projects & Repositories
 
+### 🎓 [FACULTY-](https://github.com/mariamfathima130607-stack/FACULTY-)
+Web-based academic & faculty management platform featuring separate student and faculty portals, attendance management, course assessments, analytics, and AI-assisted doubt resolution built with FastAPI, React, TypeScript, and SQLite/MySQL.
+
 ### 🧪 [masha-bio-lab](https://github.com/mariamfathima130607-stack/masha-bio-lab)
 Laboratory system & computational project repository built with TypeScript.
 
